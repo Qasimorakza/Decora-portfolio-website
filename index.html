@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DECORA Civil and Interiors — construction, renovation and interior design studio.">
+  <title>DECORA | Civil and Interiors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 40 32" width="34" height="27" aria-hidden="true">
+            <path d="M20 2 L38 20 L31 20 L31 30 L25 30 L25 22 L20 17 L12 25 L5 25 Z" fill="#b08d57"/>
+            <path d="M20 10 L28 18" stroke="#b08d57" stroke-width="0"/>
+          </svg>
+        </span>
+        <span class="logo-text">DECORA<small>Civil &amp; Interiors</small></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link btn-nav">Get a Quote</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow reveal">Construction &middot; Renovation &middot; Interior Design</p>
+      <h1 class="reveal">We Build Spaces<br>That <span class="accent">Speak</span> For You</h1>
+      <p class="hero-sub reveal">From strong foundations to stunning interiors — DECORA delivers
+        end-to-end civil and interior solutions with precision and style.</p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View Our Work</a>
+        <a href="#contact" class="btn btn-outline">Request a Quote</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><h3 data-count="150">0</h3><p>Projects Done</p></div>
+        <div class="stat"><h3 data-count="12">0</h3><p>Years Experience</p></div>
+        <div class="stat"><h3 data-count="98">0</h3><p>Happy Clients</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="eyebrow reveal">What We Do</p>
+      <h2 class="section-title reveal">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="icon">&#9968;</div>
+          <h3>Civil Construction</h3>
+          <p>Residential and commercial construction executed with certified materials and engineering precision.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">&#9874;</div>
+          <h3>Renovation</h3>
+          <p>Structural upgrades, extensions and complete makeovers that breathe new life into old spaces.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">&#9671;</div>
+          <h3>Interior Design</h3>
+          <p>Bespoke interior concepts — mood, materials, lighting and furniture planned to the last detail.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">&#8962;</div>
+          <h3>Turnkey Projects</h3>
+          <p>Single-contract delivery from blueprint to handover. One team, one responsibility, zero stress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div class="about-img reveal">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Architect reviewing building plans" loading="lazy">
+      </div>
+      <div class="about-text">
+        <p class="eyebrow reveal">Who We Are</p>
+        <h2 class="section-title reveal">Building Trust,<br>One Project at a Time</h2>
+        <p class="reveal">DECORA Civil and Interiors is a design-build studio combining structural
+          expertise with an eye for detail. We treat every project — a home, an office, a retail
+          floor — as a signature piece.</p>
+        <ul class="check-list reveal">
+          <li>Licensed engineers &amp; design professionals</li>
+          <li>Transparent pricing and timelines</li>
+          <li>Premium materials and workmanship guarantee</li>
+          <li>On-time handover, documented at every stage</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary reveal">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="eyebrow reveal">Portfolio</p>
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="filter-bar reveal" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="civil">Civil</button>
+        <button class="filter-btn" data-filter="interior">Interiors</button>
+        <button class="filter-btn" data-filter="renovation">Renovation</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <figure class="project-card reveal" data-category="civil">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80" alt="Villa under construction" loading="lazy">
+          <figcaption><span>Civil</span><h3>Hillside Private Villa</h3></figcaption>
+        </figure>
+        <figure class="project-card reveal" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&q=80" alt="Modern living room interior" loading="lazy">
+          <figcaption><span>Interior</span><h3>Minimal Loft Apartment</h3></figcaption>
+        </figure>
+        <figure class="project-card reveal" data-category="renovation">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=700&q=80" alt="Renovated bathroom" loading="lazy">
+          <figcaption><span>Renovation</span><h3>Heritage Bathroom Remodel</h3></figcaption>
+        </figure>
+        <figure class="project-card reveal" data-category="interior">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" alt="Corporate office interior" loading="lazy">
+          <figcaption><span>Interior</span><h3>Corporate HQ Interiors</h3></figcaption>
+        </figure>
+        <figure class="project-card reveal" data-category="civil">
+          <img src="https://images.unsplash.com/photo-1503389508587-0d24f4d98e1b?w=700&q=80" alt="Commercial building" loading="lazy">
+          <figcaption><span>Civil</span><h3>Retail Complex Structure</h3></figcaption>
+        </figure>
+        <figure class="project-card reveal" data-category="renovation">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80" alt="Renovated home exterior" loading="lazy">
+          <figcaption><span>Renovation</span><h3>Farmhouse Revival</h3></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section section-alt" id="process">
+    <div class="container">
+      <p class="eyebrow reveal">How We Work</p>
+      <h2 class="section-title reveal">Our Process</h2>
+      <div class="process-grid">
+        <div class="process-step reveal"><h3>01</h3><h4>Consult</h4><p>Site visit, requirement study and budget framing.</p></div>
+        <div class="process-step reveal"><h3>02</h3><h4>Design</h4><p>Concepts, 3D visuals and approved working drawings.</p></div>
+        <div class="process-step reveal"><h3>03</h3><h4>Build</h4><p>Executed with weekly progress reports and QC checks.</p></div>
+        <div class="process-step reveal"><h3>04</h3><h4>Handover</h4><p>Snag-free completion with warranty documentation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <p class="eyebrow reveal">Client Voices</p>
+      <h2 class="section-title reveal">What People Say</h2>
+      <div class="testi-grid">
+        <blockquote class="testi-card reveal">
+          <p>"DECORA delivered our villa two weeks ahead of schedule. The quality of finish is outstanding."</p>
+          <footer>&mdash; A. Rahman, Residential Client</footer>
+        </blockquote>
+        <blockquote class="testi-card reveal">
+          <p>"Our office redesign transformed how clients see us. Professional team, zero surprises on billing."</p>
+          <footer>&mdash; S. Menon, Business Owner</footer>
+        </blockquote>
+        <blockquote class="testi-card reveal">
+          <p>"They renovated a 30-year-old home without a single complaint from neighbours. Highly recommended."</p>
+          <footer>&mdash; K. Dsouza, Renovation Client</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Let's Build Something Together</h2>
+        <p class="reveal">Tell us about your project and we'll get back within 24 hours with a free consultation.</p>
+        <ul class="reveal">
+          <li><strong>Phone:</strong> +92 00000 00000</li>
+          <li><strong>Email:</strong> hello@decora.example</li>
+          <li><strong>Studio:</strong> Your City, Pakistan</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <small class="error"></small>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+92 ..." required>
+            <small class="error"></small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <small class="error"></small>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option>Civil Construction</option>
+            <option>Renovation</option>
+            <option>Interior Design</option>
+            <option>Turnkey Project</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Brief about your project..." required></textarea>
+          <small class="error"></small>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p class="form-success" id="formSuccess" hidden>Thank you! Your message has been received.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><strong>DECORA</strong> &mdash; Civil and Interiors</p>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copy">&copy; <span id="year"></span> DECORA Civil and Interiors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
